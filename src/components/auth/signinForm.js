@@ -3,7 +3,7 @@ import { reduxForm, Field } from "redux-form";
 
 import { FormTitle } from "../formTitle";
 import { FormInput, FormButton } from "../formFields";
-import textLink from "../textLink";
+import TextLink from "../textLink";
 
 class SigninForm extends Component {
   render() {
@@ -34,9 +34,10 @@ class SigninForm extends Component {
         title="login"
         component={FormButton}
       />
+      
       <div className='sign-in-form__text-links'>
-      <textLink to='/forgot' text='Forgot Password?'/>
-      <textLink to='/signup' text='Not a member? Register Today!'/>
+      <TextLink to='/forgot' text='Forgot Password?'/>
+      <TextLink to='/signup' text='Not a member? Register Today!'/>
       </div>
       
       </form>
